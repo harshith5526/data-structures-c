@@ -41,7 +41,7 @@ printf("Activity Description: %s\n", calendar[i]->activityDescription);
 printf("\n"); 
 } 
 } 
-// Function to free memory allocated for the calendar 
+
 void freeMemory(struct Day* calendar[], int size) { 
 for (int i = 0; i < size; i++) { 
 free(calendar[i]->dayName); 
@@ -55,7 +55,7 @@ int weekSize = 7;
 struct Day* week[weekSize]; 
 read(week, weekSize); 
 display(week, weekSize); 
-// Free allocated memory 
+
 freeMemory(week, weekSize); 
 return 0; 
 }
