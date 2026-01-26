@@ -6,3 +6,4 @@
 ## 4.operation on expressions
 ### 4a.infix to postfix conversion 
 ### 4b.suffix to single digit operand conversion 
+## 5.circular queue opearion
