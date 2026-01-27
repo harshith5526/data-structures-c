@@ -2,8 +2,11 @@
 
 ## 1.arrays
 ## 2.linked list
+###. a. doubly linked list
+###. b. singly linked list
 ## 3.string operations
 ## 4.operation on expressions
-### 4a.infix to postfix conversion 
-### 4b.suffix to single digit operand conversion 
+###  a.infix to postfix conversion 
+###  b.suffix to single digit operand conversion 
 ## 5.circular queue opearion
+
