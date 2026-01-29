@@ -8,13 +8,15 @@
 
   ###  c.circular linked list
   
-     ###  singly circular linked list 
+###  singly circular linked list
+
 ## 3.string operations
 ## 4.operation on expressions
   ###  a.infix to postfix conversion 
 
   ###  b.suffix to single digit operand conversion 
 ## 5.circular queue opearion
+
 
 
 
