@@ -17,6 +17,8 @@
   ###  b.suffix to single digit operand conversion 
 ## 5.circular queue opearion
 
+## 6.binary search operation
+
 
 
 
