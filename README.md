@@ -21,5 +21,7 @@
 
 ## 7.graph operation 
 
+## 8.hash table functions
+
 
 
