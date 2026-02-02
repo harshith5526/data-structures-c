@@ -22,6 +22,7 @@ NODE start = NULL;
 
 int count=0;
 
+// node creation 
 NODE create()
 
 {
