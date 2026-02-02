@@ -1,14 +1,16 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <string.h> 
- 
+
+// strucure
 struct Day  
 { 
-}; 
 char* dayName; 
 int date; 
 char* activityDescription; 
+};
 
+// create function
 struct Day* createDay()  
 { 
 struct Day* newDay = (struct Day*)malloc(sizeof(struct Day)); 
@@ -24,12 +26,15 @@ scanf(" %[^\n]", newDay->activityDescription);
 return newDay; 
 } 
 
+// read the data form input
 void read(struct Day* calendar[], int size) { 
 for (int i = 0; i < size; i++) { 
 printf("Enter details for day %d:\n", i + 1); 
 calendar[i] = createDay(); 
 } 
 } 
+
+// displaying the contents
 
 void display(struct Day* calendar[], int size) { 
 printf("\nWeek's Activity Details:\n"); 
@@ -42,6 +47,7 @@ printf("\n");
 } 
 } 
 
+// memory free
 void freeMemory(struct Day* calendar[], int size) { 
 for (int i = 0; i < size; i++) { 
 free(calendar[i]->dayName); 
@@ -49,6 +55,8 @@ free(calendar[i]->activityDescription);
 free(calendar[i]); 
 } 
 } 
+
+// main function 
 int main()  
 { 
 int weekSize = 7; 
