@@ -6,7 +6,7 @@
 
   ###  b. singly linked list
 
-  ###  c.circular linked list
+  ###  c. circular linked list
   
 ###  singly circular linked list
 
@@ -22,6 +22,7 @@
 ## 7.graph operation 
 
 ## 8.hash table functions
+
 
 
 
