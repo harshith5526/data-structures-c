@@ -154,6 +154,7 @@ void deqdemo()
            } 
      } 
 } 
+// main function
 void main() 
 { 
     int ch,i,n; 
