@@ -2,16 +2,19 @@
 #include<stdlib.h>
 #include<math.h>
 #define COMPARE(x, y) ( (x == y) ? 0 : (x > y) ? 1 : -1)
+
 struct node
 { int coef;
  int xexp, yexp, zexp;
  struct node *link;
 };
 typedef struct node *NODE;
+
 NODE getnode()
 {
  NODE x;
  x = (NODE) malloc(sizeof(struct node));
+
  if(x == NULL)
  {
  printf("Running out of memory \n"); NODE attach(int coef, int xexp, int yexp, int zexp, NODE head)
@@ -23,6 +26,7 @@ NODE getnode()
  temp->yexp = yexp;
  temp->zexp = zexp;
  cur = head->link;
+ 
  while(cur->link != head)
  {
  cur = cur->link;
@@ -31,6 +35,7 @@ NODE getnode()
  temp->link = head;
  return head;
 }
+
 NODE read_poly(NODE head)
 {
  int i, j, coef, xexp, yexp, zexp, n;
@@ -48,6 +53,7 @@ NODE read_poly(NODE head)
  }
  return head;
 }
+
 void display(NODE head)
 {
  NODE temp;
@@ -65,6 +71,7 @@ void display(NODE head)
  printf(" + ");
  }
 }
+
 int poly_evaluate(NODE head)
 {
  int x, y, z, sum = 0;
@@ -78,6 +85,7 @@ int poly_evaluate(NODE head)
  }
  return sum;
 }
+
 NODE poly_sum(NODE head1, NODE head2, NODE head3)
 {
  NODE a, b;
@@ -182,6 +190,7 @@ break;
  }
  return head3;
 }
+
 void main()
 {
  NODE head, head1, head2, head3;
