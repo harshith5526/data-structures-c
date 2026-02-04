@@ -3,6 +3,7 @@
 #include<math.h>
 #define COMPARE(x, y) ( (x == y) ? 0 : (x > y) ? 1 : -1)
 
+// structure
 struct node
 { int coef;
  int xexp, yexp, zexp;
@@ -13,7 +14,7 @@ typedef struct node *NODE;
 NODE getnode()
 {
  NODE x;
- x = (NODE) malloc(sizeof(struct node));
+ x = (NODE) malloc(sizeof(struct node));   // allocating memory 
 
  if(x == NULL)
  {
