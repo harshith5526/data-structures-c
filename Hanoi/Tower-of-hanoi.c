@@ -4,6 +4,7 @@
 
 void tower(int n, char from_peg, char aux_peg, char to_peg);
 
+// main function
 void main()
 
 {
@@ -21,6 +22,7 @@ void main()
  printf("\n Total number of moves = %0.0f", pow(2,n)-1 );
 
 }
+// calling finction
 
 void tower(int n, char from_peg, char aux_peg, char to_peg) 
 
