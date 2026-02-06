@@ -23,7 +23,7 @@ NODE create()
 
  NODE temp;
 
- temp = (NODE) malloc(sizeof(struct BST));
+ temp = (NODE) malloc(sizeof(struct BST)); // allocating memory 
 
  printf("\nEnter The value: ");
 
